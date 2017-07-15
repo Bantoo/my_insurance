@@ -1,0 +1,128 @@
+<html>
+<head>
+<script type="text/javascript" src ="forms_tute.js"></script>
+<link rel="stylesheet" type="text/css" href="myStyle.css">
+
+<title id="formName">New Policy</title>
+
+</head>
+
+<body>
+<div class="topnav">
+<h2>Public Health Insurance!</h2>
+</div>
+
+<br>
+<div class="topnav">
+<form action="#" method="POST">
+	<input type="submit" Value="Customer Registration" name="linkClicked"/>
+	<input type="submit" Value="Change Password" name="linkClicked"/>
+	<input type="submit" Value="Policy Registration" name="linkClicked"/>
+	<input type="submit" Value="Update Policy" name="linkClicked"/>
+	<input type="submit" Value="Claim Policy" name="linkClicked"/>
+	<input type="submit" Value="Policy Plans" name="linkClicked"/>
+	<input type="submit" Value="Edit Customer Details" name="linkClicked"/>
+	<input type="submit" Value="Delete Customer" name="linkClicked"/>
+	<input type="submit" Value="List Registered Customers" name="linkClicked"/>
+	<input type="submit" Value="List Registered Policies" name="linkClicked"/>
+</form>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<div align="center">
+<h1>  <U> Register For Policy </U> </h2>
+
+<form action="#" method="POST">
+<table>
+	<tr>
+		<td>
+			*Customer Id
+		</td>
+		<td>
+			<input type="text" placeholder="Customer Id" id="custId" name="custId" />
+		</td>
+	</tr>
+	<tr>
+		<td>
+			*Policy
+		</td>
+		<td>
+			<select id="policy" name="policyType" >
+					<option value=" ">--Select--</option>
+					<option value="ACC">Accident</option>
+					<option value="CRI">Critical Illness</option>
+					<option value="SHO">Short-Term</option>
+					<option value="FIX">Fixed-Indemnity</option>
+					<option value="EMP">Employer-based HIP</option>
+			</select>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			*Term(In Months)
+		</td>
+		<td>
+			<input type="text" placeholder="No Of Months" id="term" name="terms" />
+		</td>
+	</tr>	
+
+	</tr>
+	<tr>
+		<td>
+			*Sum Insured
+		</td>
+		<td>
+			<input type="text" placeholder="Amount" id="sumInsured" name="sumInsured" />
+		</td>
+	</tr>	
+	<tr>
+		<td>
+			*Nominee Name
+		</td>
+		<td>
+			<input type="text" placeholder="the one you cared about" id="nominee" name="nominee" />
+		</td>
+	</tr>		
+</table>
+	
+	<br>
+	<input type="submit" Value="Register Policy" name="clicked"/>
+	<input type="button" Value="Reset" id="clicked"/>
+
+	</form>
+	
+	<p style="color:red"> (*): Mandatory Fields </p>
+	
+	<br>
+		<h3 style="color: black ; text-align:center;"><%=message%>  </h3>
+	<%if(errors != undefined) { %>
+	<ul>
+		<p><u>Error Details:</u></p>
+		<% errors.forEach(function(error) { %>
+		<li>
+			<%=error.msg %>
+		</li>
+		<% }) %>
+	</ul>
+<% } %>
+<br><br>
+<form action="#" method="POST">
+	<input type="submit" Value="Logout <%=whichUser%>" name="logout"/>
+</form>
+</div >
+
+<br><br><br><br><br><br>
+<marquee>Developed By Ashutosh...</marquee>
+
+</body>
+
+</html>
+
+
+
+
+

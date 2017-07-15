@@ -1,0 +1,114 @@
+<html>
+<head>
+<script type="text/javascript" src ="forms_tute.js"></script>
+<link rel="stylesheet" type="text/css" href="myStyle.css">
+
+<title id="formName">Claim Policy</title>
+
+</head>
+
+<body>
+<div class="topnav">
+<h2>Public Health Insurance!</h2>
+</div>
+
+<br>
+<div class="topnav">
+<form action="#" method="POST">
+	<input type="submit" Value="Customer Registration" name="linkClicked"/>
+	<input type="submit" Value="Change Password" name="linkClicked"/>
+	<input type="submit" Value="Policy Registration" name="linkClicked"/>
+	<input type="submit" Value="Update Policy" name="linkClicked"/>
+	<input type="submit" Value="Claim Policy" name="linkClicked"/>
+	<input type="submit" Value="Policy Plans" name="linkClicked"/>
+	<input type="submit" Value="Edit Customer Details" name="linkClicked"/>
+	<input type="submit" Value="Delete Customer" name="linkClicked"/>
+	<input type="submit" Value="List Registered Customers" name="linkClicked"/>
+	<input type="submit" Value="List Registered Policies" name="linkClicked"/>
+</form>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<div align="center">
+<h1>  <U> Policy Claim </U> </h2>
+
+<form action="#" method="POST">
+<table>
+	<tr>
+		<td>
+			*Policy Registration Id
+		</td>
+		<td>
+			<input type="text" placeholder="Policy Reg. Id" id="policyId" name="policyRegId" />
+		</td>
+	</tr>
+	<tr>
+		<td>
+			*Date Of Claim
+		</td>
+		<td>
+			<input type="text" placeholder="DD-MM-YYYY" id="claimDate" name="claimDate" />
+		</td>
+	</tr>
+	<tr>
+		<td>
+			*Type Of Claim
+		</td>
+		<td style="color:black">
+			<input type="radio"  id='claimTypeM' name="claimType" value="M" />Maturity
+			<input type="radio"  id='claimTypeI' name="claimType" value="I" />Incident
+			<input type="radio"  id='claimTypeB' name="claimType" value="B" />Break
+		</td>
+	</tr>
+	<tr>
+		<td>
+			*Approver Id
+		</td>
+		<td>
+			<input type="text" placeholder="Policy Manager Id" id="approverId" name="approverId" />
+		</td>
+	</tr>
+</table>
+	
+	<br>
+	<input type="submit" Value="Apply Claim" name="clicked"/>
+	<input type="button" Value="Reset" id="clicked"/>
+
+</form>
+	
+	<p style="color:red"> (*): Mandatory Fields </p>
+	
+	<br>
+		<h3 style="color: black ; text-align:center;"><%=message%>  </h3>
+	<%if(errors != undefined) { %>
+	<ul>
+		<p><u>Error Details:</u></p>
+		<% errors.forEach(function(error) { %>
+		<li>
+			<%=error.msg %>
+		</li>
+		<% }) %>
+	</ul>
+<% } %>
+<br><br>
+	<form action="#" method="POST">
+	<!--<a style="color: black ; text-align:center" href="#"><b><u>Logout </u> : <%=whichUser%></b></a> -->
+	<input type="submit" Value="Logout <%=whichUser%>" name="logout"/>
+</form>
+</div >
+
+<br><br><br><br>
+<marquee>Developed By Ashutosh...</marquee>
+
+</body>
+
+</html>
+
+
+
+
+

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Error</title>
+</head>
+<body>
+<h4>Err: Entered Login Details can not be validated </h4>
+<%if(errors != undefined) { %>
+	<ul>
+		<p><u>Error Details:</u></p>
+		<li>
+			<%=errors.email%>
+		</li>
+	</ul>
+<% } %>
+<br>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<html>
+<head>
+<script type="text/javascript" src ="forms_tute.js"></script>
+<link rel="stylesheet" type="text/css" href="myStyle.css">
+
+<script>
+function	flushValue(){
+	document.getElementById('userId').value ="";
+	document.getElementById('password').value ="";
+}
+</script>
+
+
+<title id="formName">Welcome Page</title>
+
+</head>
+
+<body>
+<div class="topnav">
+<h2>Public Health Insurance!</h2>
+</div>
+
+<br>
+
+<div class="topnav">
+<form action="#" method="POST">
+	<input type="submit" Value="Customer Registration" name="linkClicked" disabled/>
+	<input type="submit" Value="Change Password" name="linkClicked"/>
+	<input type="submit" Value="Policy Registration" name="linkClicked" disabled/>
+	<input type="submit" Value="Update Policy" name="linkClicked" disabled/>
+	<input type="submit" Value="Claim Policy" name="linkClicked" disabled/>
+	<input type="submit" Value="Policy Plans" name="linkClicked" disabled/>
+	<input type="submit" Value="Edit Customer Details" name="linkClicked" disabled/>
+	<input type="submit" Value="Delete Customer" name="linkClicked" disabled/>
+	<input type="submit" Value="List Registered Customers" name="linkClicked" disabled/>
+	<input type="submit" Value="List Registered Policies" name="linkClicked" disabled/>
+</form>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<div align="center">
+<h1>  <U>Login </U> </h2>
+
+<form action="#" method="POST">
+	<table>
+		<tr>
+			<td>
+				*User Id
+			</td>
+			<td>
+				<input type="text" placeholder="User Id" id="userId" name="userId" />
+			</td>
+		</tr>
+		<tr>
+		<td>
+			*Password
+		</td>
+		<td>
+			<input type="password" placeholder="password" id="password" name="password" />
+		</td>
+	</tr>
+	</table>
+	
+	<br>
+	<input type="submit" Value="Login" name="clicked"/>
+	<input type="button" Value="Reset" id="clicked" onclick="flushValue()" />
+
+	</form>
+	
+	<p style="color:red"> (*): Mandatory Fields </p>
+	
+	<br>
+	<h3 style="color: black ; text-align:center"><u> <%=message%> </u> </h3>
+		<%if(errors != undefined) { %>
+		<h3 style="color: red">Err: Entered Login Details can not be validated, Please Enter Correct Details </h3>
+	<% } %>
+	<br><br>
+	<form action="#" method="POST">
+	<input type="submit" Value="home" name="home"/>
+</form>
+</div >
+
+<br><br><br><br><br><br>
+<marquee>Developed By Ashutosh...</marquee>
+
+</body>
+
+</html>
+
+
+
+
+

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Authorization Page
+	</title>
+</head>
+<body background="bg.jpg" >
+
+<h2>Enter Authorization Key:</h2>
+<form action="#" method="POST">
+	<table>
+	<tr>
+	<td>
+		<label> Key* :</label></td><td>
+		<input type="password" name="key" placeholder="Clearance Key" />
+	</td>
+			
+	<td> <input type="submit" name="clicked" value="Submit" >	
+	</td>
+	</tr>
+	</table>
+	<%if(errors != undefined) { %>
+		<h3 style="color: red">Err: Entered Login Details can not be validated, Please Enter Correct Details </h3>
+	<% } %>
+</body>
+</html>

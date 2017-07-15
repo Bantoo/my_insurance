@@ -1,0 +1,161 @@
+.topnav {
+  overflow: hidden;
+  background-color: blue;
+}
+.topnav a {
+    background-color: #4CAF50;
+	padding: 10px 12px;
+	font-size: 20px;
+    color: yellow;
+}
+.topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+	FONT-FAMILY: Arial, 'Times New Roman';
+    FONT-SIZE: 10pt;
+}
+BODY
+{
+	    background-color: lightblue;
+    CURSOR: auto;
+    FONT-FAMILY: Arial, 'Times New Roman';
+    FONT-SIZE: 10pt;
+    FONT-WEIGHT: 500
+    MARGIN-TOP: 0.0in;
+    MARGIN-LEFT: 0.02in;
+    MARGIN-BOTTOM: 0.0in;
+    MARGIN-RIGHT: 0.0in;
+}
+BUTTON
+{
+    BACKGROUND-COLOR: orchid;
+    BORDER-BOTTOM: medium none;
+    BORDER-LEFT: medium none;
+    BORDER-RIGHT: medium none;
+    BORDER-TOP: medium none;
+    COLOR: black;
+    FONT-FAMILY: Arial, 'Times New Roman';
+    FONT-SIZE: 10pt;
+    FONT-WEIGHT: bold;
+    HEIGHT: 30px;
+    TEXT-ALIGN: center;
+    WIDTH: 30mm
+}
+TABLE
+{
+	border: 3px solid black;
+    BACKGROUND-COLOR: TRANSPARENT;
+    COLOR: black;
+    CURSOR: default;
+    FONT-FAMILY: Arial, 'Times New Roman';
+    FONT-SIZE: 20pt;
+    FONT-WEIGHT: 500;
+    OVERFLOW: auto;
+}
+TD
+{
+    FONT-FAMILY: Arial, 'Times New Roman';
+    FONT-SIZE: 10pt;
+	COLOR: red;
+	border: 1px solid gray;
+	TEXT-ALIGN: center
+}
+TR
+{
+	border: 2px solid black;
+    FONT-FAMILY: Arial, 'Times New Roman';
+    FONT-SIZE: 10pt;
+    Height: 25
+}
+TH
+{
+    FONT-FAMILY: Arial, 'Times New Roman';
+    FONT-SIZE: 10pt;
+    TEXT-ALIGN: center
+}
+THEAD
+{
+    BACKGROUND-COLOR: #c5c5a5;
+    BORDER-BOTTOM: medium none;
+    BORDER-LEFT: medium none;
+    BORDER-RIGHT: medium none;
+    BORDER-TOP: medium none;
+    FONT-FAMILY: Arial, 'Times New Roman';
+    FONT-SIZE: 10pt;
+    FONT-WEIGHT: bold;
+    TEXT-ALIGN: center
+}
+INPUT
+{
+    FONT-FAMILY: Arial, 'Times New Roman';
+    FONT-SIZE: 10pt
+}
+SELECT
+{
+    FONT-FAMILY: Arial, 'Times New Roman';
+    FONT-SIZE: 10pt
+}
+H1
+{
+    COLOR: BLACK;
+    FONT-FAMILY: Arial, 'Times New Roman';
+    FONT-SIZE: large;
+    FONT-WEIGHT: bolder;
+    MARGIN-TOP: 0.05in;
+    TEXT-ALIGN: CENTER
+}
+H2
+{
+    COLOR: yellow;
+    FONT-FAMILY: Arial, 'Times New Roman';
+    FONT-SIZE: 16pt;
+    FONT-WEIGHT: bold;
+    MARGIN-TOP: 0.25in;
+    TEXT-ALIGN: center
+}
+H4
+{
+    COLOR: black;
+    FONT-FAMILY: Arial, 'Times New Roman';
+    FONT-SIZE: 10pt;
+    FONT-WEIGHT: bold;
+    TEXT-ALIGN: left
+}
+H5
+{
+    FONT-FAMILY: Arial, 'Times New Roman';
+    FONT-SIZE: 10pt;
+    FONT-WEIGHT: 500;
+    MARGIN-TOP: 0.25in;
+    TEXT-ALIGN: left
+}
+H6
+{
+    COLOR: crimson;
+    FONT-FAMILY: Arial, 'Times New Roman';
+    FONT-WEIGHT: 600
+}
+A:active
+{
+    COLOR: Yellow;
+    FONT-FAMILY: Arial, 'Times New Roman';
+    FONT-SIZE: 14pt;
+    FONT-WEIGHT: bold;
+    TEXT-DECORATION: none
+}
+A:link
+{
+    COLOR: Yellow;
+    FONT-FAMILY: Arial, 'Times New Roman';
+    FONT-SIZE: 10pt;
+    TEXT-DECORATION: none
+}
+A:visited
+{
+    COLOR: white;
+    FONT-FAMILY: Arial, 'Times New Roman';
+    FONT-SIZE: 10pt;
+    FONT-WEIGHT: bold;
+    TEXT-DECORATION: none
+}
+

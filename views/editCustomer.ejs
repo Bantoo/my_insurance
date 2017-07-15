@@ -1,0 +1,175 @@
+<html>
+<head>
+<script>
+//alert('page Loaded')
+	
+</script>
+<link rel="stylesheet" type="text/css" href="myStyle.css">
+
+
+<title id="formName">Edit Customer</title>
+
+</head>
+
+<body>
+<div class="topnav">
+<h2>Public Health Insurance!</h2>
+</div>
+
+<br>
+
+<div class="topnav">
+<form action="#" method="POST">
+	<input type="submit" Value="Customer Registration" name="linkClicked"/>
+	<input type="submit" Value="Change Password" name="linkClicked"/>
+	<input type="submit" Value="Policy Registration" name="linkClicked"/>
+	<input type="submit" Value="Update Policy" name="linkClicked"/>
+	<input type="submit" Value="Claim Policy" name="linkClicked"/>
+	<input type="submit" Value="Policy Plans" name="linkClicked"/>
+	<input type="submit" Value="Edit Customer Details" name="linkClicked"/>
+	<input type="submit" Value="Delete Customer" name="linkClicked"/>
+	<input type="submit" Value="List Registered Customers" name="linkClicked"/>
+	<input type="submit" Value="List Registered Policies" name="linkClicked"/>
+
+</form>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<div align="center">
+<h1>  <U>Edit Customer Details </U> </h2>
+
+<form action="#" method="POST">
+<table>
+<%if(details == undefined) { %>
+	<tr>
+		<td>
+			*Customer ID
+		</td>
+		<td>
+			<input type="text" placeholder="Customer Id" id="custId2"  name="custId2"   />
+		</td>
+	</tr>
+	
+		<p align="center"><b> <%=message1%> </b></p>	
+		
+<% } %>
+<%if(details != undefined) { %>
+	<% details.forEach(function(detail) { %>
+	<tr>
+		<td>
+			*Customer ID
+		</td>
+		<td>
+			<input type="text"  placeholder="Customer Id" id="custId1"  name="custId1" value="<%=detail.custId %>" readonly />
+		</td>
+	</tr>		
+	<tr>
+		<td>
+			*Name
+		</td>
+		<td>
+			<input type="text" placeholder="Name" id="userName" name="userName" value="<%=detail.name %>"/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			*Date Of Birth
+		</td>
+		<td>
+			<input type="text" placeholder="DD-MM-YYYY" id="dateOfBirth" name="dateOfBirth" value="<%=detail.dob %>"/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Gender
+		</td>
+		<td style="color:black" >
+			<input type="radio"  id="genderM" name="gender" value="M"  />Male
+			<input  type="radio"  id="genderF" name="gender" value="F" />Female
+		</td>
+	</tr>
+	<script>
+		if ("<%=detail.gender%>" == "M"){
+			document.getElementById("genderM").checked = true;
+		}
+		if ("<%=detail.gender%>" == "F"){
+			document.getElementById("genderF").checked = true;
+		}
+				
+	</script>
+	
+	<tr>
+		<td>
+			*Email
+		</td>
+		<td>
+			<input type="text" id="email" placeholder="someone@example.com" name="email" value="<%=detail.email %>"/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			*Mobile No
+		</td>
+		<td>
+			<input type="text" id="mobileNo" placeholder="9876543210" name="mobileNo" value="<%=detail.mobile %>"/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Address
+		</td>
+		<td>		
+	<textarea rows="3" cols="17" placeholder="Please Enter Your Comm. Address Here" name="address" ><%=detail.address%></textarea>		
+		</td>
+	</tr>	
+
+	<% }) %>
+<% } %>
+</table>
+
+	<br>
+<%if(details == undefined) { %>
+	<input type="submit" Value="Fetch Customer" name="clicked"/>
+<% } %>
+<%if(details != undefined) { %>
+	<input type="submit" Value="Edit Customer" name="clicked"  />
+<% } %>
+	<input type="button" Value="Reset" id="clicked"/>
+
+	</form>
+	
+	<p style="color:red"> (*): Mandatory Fields </p>
+	
+	<br>
+	<%if(errors != undefined) { %>
+	<ul>
+		<p><u>Error Details:</u></p>
+		<% errors.forEach(function(error) { %>
+		<li>
+			<%=error.msg %>
+		</li>
+		<% }) %>
+	</ul>
+<% } %>
+<br><br>
+	
+<form action="#" method="POST">
+	<input type="submit" Value="Logout <%=whichUser%>" name="logout"/>
+</form>
+</div >
+
+<br><br><br>
+<marquee>Developed By Ashutosh...</marquee>
+
+</body>
+
+</html>
+
+
+
+
+

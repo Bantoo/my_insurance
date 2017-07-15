@@ -1,0 +1,119 @@
+<html>
+<head>
+<script type="text/javascript" src ="forms_tute.js"></script>
+<link rel="stylesheet" type="text/css" href="myStyle.css">
+
+<title id="formName">Update Policy</title>
+
+</head>
+
+<body>
+<div class="topnav">
+<h2>Public Health Insurance!</h2>
+</div>
+
+<br>
+
+<div class="topnav">
+<form action="#" method="POST">
+	<input type="submit" Value="Customer Registration" name="linkClicked"/>
+	<input type="submit" Value="Change Password" name="linkClicked"/>
+	<input type="submit" Value="Policy Registration" name="linkClicked"/>
+	<input type="submit" Value="Update Policy" name="linkClicked"/>
+	<input type="submit" Value="Claim Policy" name="linkClicked"/>
+	<input type="submit" Value="Policy Plans" name="linkClicked"/>
+	<input type="submit" Value="Edit Customer Details" name="linkClicked"/>
+	<input type="submit" Value="Delete Customer" name="linkClicked"/>
+	<input type="submit" Value="List Registered Customers" name="linkClicked"/>
+	<input type="submit" Value="List Registered Policies" name="linkClicked"/>
+</form>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<div align="center">
+<h1>  <U> Update Policy </U> </h2>
+
+<form action="#" method="POST">
+<table>
+<%if(details == undefined) { %>
+	<tr>
+		<td>
+			*Policy Registration Id
+		</td>
+		<td>
+			<input type="text" placeholder="Policy Id" id="policyId2" name="policyId2" />
+		</td>
+	</tr>
+		<p align="center"><b> <%=message1%> </b></p>	
+		
+<% } %>
+<%if(details != undefined) { %>
+	<% details.forEach(function(detail) { %>
+		<tr>
+		<td>
+			*Policy Registration Id
+		</td>
+		<td>
+			<input type="text" placeholder="Policy Id" id="policyId1" name="policyId1" value="<%=detail.policyRegId%>" readonly />
+		</td>
+	</tr>
+	<tr>
+		<td>
+			*Policy Status
+		</td>
+		<td style="color:black">
+			<input type="radio"  id='policyStatusO' name="policyStatus" value="O" />Open
+			<input type="radio"  id='policyStatusC' name="policyStatus" value="C" />Closed
+			<input type="radio"  id='policyStatusF' name="policyStatus" value="F" />Freeze
+		</td>
+	</tr>
+	<script>
+		if ("<%=detail.Status%>" == "O"){
+			document.getElementById("policyStatusO").checked = true;
+		}
+		if ("<%=detail.Status%>" == "C"){
+			document.getElementById("policyStatusC").checked = true;
+		}
+		if ("<%=detail.Status%>" == "F"){
+			document.getElementById("policyStatusF").checked = true;
+		}
+	</script>
+	<% }) %>
+<% } %>
+</table>
+	
+	<br>
+<%if(details == undefined) { %>
+	<input type="submit" Value="Fetch Policy For Update" name="clicked"/>
+<% } %>
+<%if(details != undefined) { %>
+	<input type="submit" Value="Update Policy" name="clicked"  />
+<% } %>
+	<input type="button" Value="Reset" id="clicked"/>
+
+	</form>
+	
+	<p style="color:red"> (*): Mandatory Fields </p>
+	
+	<br><br><br>
+	<form action="#" method="POST">
+	<!--<a style="color: black ; text-align:center" href="#"><b><u>Logout </u> : <%=whichUser%></b></a> -->
+	<input type="submit" Value="Logout <%=whichUser%>" name="logout"/>
+</form>
+</div >
+
+<br><br><br><br><br><br>
+<marquee>Developed By Ashutosh...</marquee>
+
+</body>
+
+</html>
+
+
+
+
+
