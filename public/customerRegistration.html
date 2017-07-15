@@ -1,0 +1,117 @@
+<html>
+<head>
+<script type="text/javascript" src ="forms_tute.js"></script>
+<link rel="stylesheet" type="text/css" href="myStyle.css">
+
+
+
+
+<title id="formName">New Customer</title>
+
+</head>
+
+<body>
+<div class="topnav">
+<h2>Public Health Insurance!</h2>
+</div>
+
+<br>
+
+<div class="topnav">
+
+<a href="customerRegistration.html">Customer Registration</a>
+<a href="changePassword.html">Change Password</a>
+<a href="policyRegistration.html">Policy Registration</a>
+<a href="updatePolicy.html">Update Policy</a>
+<a href="claimPolicy.html">Claim Policy</a>
+<a href="approveClaim.html">Approve Claim</a>
+<a href="policyPlan.html">Policy Plans</a>
+<a href="editCustomer.html">Edit Customer Details</a>
+<a href="deleteCustomer.html">Delete Customer</a>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<div align="center">
+<h1>  <U>Customer Registration </U> </h2>
+
+<form action="#" method="POST">
+<table>
+	<tr>
+		<td>
+			*Name
+		</td>
+		<td>
+			<input type="text" placeholder="Name" id="userName" name="userName" />
+		</td>
+	</tr>
+	<tr>
+		<td>
+			*Password
+		</td>
+		<td>
+			<input type="password" placeholder="password" name="password" />
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Gender
+		</td>
+		<td style="color:black">
+			<input type="radio"  id='gender' name="gender" value="M" onchange="male()"/>Male
+			<input  type="radio"  id='gender' name="gender" value="F" onchange="female()"/>Female
+		</td>
+	</tr>
+	<tr>
+		<td>
+			*Email
+		</td>
+		<td>
+			<input type="text" id="email" placeholder="someone@example.com" name="email" />
+		</td>
+	</tr>
+	<tr>
+		<td>
+			*Mobile No
+		</td>
+		<td>
+			<input type="text" id="mobileNo" placeholder="9876543210" name="mobileNo" />
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Address
+		</td>
+		<td>		
+			<textarea rows="3" cols="17" placeholder="Please Enter Your Comm. Address Here" name="address" ></textarea>		
+		</td>
+	</tr>	
+</table>
+</form>
+	
+	<br>
+	<input type="button" Value="Register" id="clicked"/>
+	<input type="button" Value="Reset" id="clicked"/>
+
+	</form>
+	
+	<p style="color:red"> (*): Mandatory Fields </p>
+	
+	<br><br><br>
+	<a style="color:black" href="login.html"><u>Home<u></a>
+</div >
+
+<br><br><br><br><br><br>
+<marquee>Developed By Ashutosh...</marquee>
+
+</body>
+
+</html>
+
+
+
+
+
